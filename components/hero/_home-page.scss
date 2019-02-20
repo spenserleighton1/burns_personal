@@ -1,0 +1,64 @@
+//
+// **
+// CENTERED SIMPLE HERO
+// **
+//
+.hero-centered-simple{
+	.hero-content{
+		position:absolute;
+		top:50%;
+		left:50%;
+		width:100%;
+		transform:translate(-50%, -50%);
+		z-index:2;
+		text-align:center;
+		color:#fff;
+		z-index:2;
+
+		@media(min-width:768px){
+
+			position:absolute;
+			// bottom:80px;
+			width:100%;
+			padding:0;
+
+		}
+
+		.hero-overlay-image{
+			max-height:250px;
+		}
+
+		.hero-description{
+
+			p{
+
+				@media(min-width:768px){
+					font-size:20px;
+				}
+
+				@media(min-width:1025px){
+					font-size:30px;
+				}
+
+			}
+
+		}
+
+		.hero-buttons{
+			padding-top:20px;
+
+			.btn{
+				margin-bottom:5px;
+			}
+		}
+
+	}
+
+	h1{
+		position:relative;
+		padding: 0 0 15px;
+		margin-bottom: 20px;
+	}
+
+}
+

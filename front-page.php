@@ -4,9 +4,8 @@
  */
 
 get_header();
-
+	
 	while ( have_posts() ) : the_post(); ?>
-
 		<?php
 		/**
 		 * This is an example of how to use the component system
@@ -14,10 +13,13 @@ get_header();
 		 * @var StdClass
 		 */
 		
-		// $object = new StdClass;
-		// $object->foo = 'bar';
-		
-		// Components\View::render('component-name', 'view', $object);
+		$hero = new StdClass;
+		$hero->hero_image  = get_field('hero_image');
+		$hero->hero_text  = get_field('hero_text');
+		$hero->hero_link  = get_field('hero_link');
+		$hero->hero_test  = 'testingitout';
+
+		Components\View::render('hero', 'main-hero', $hero);
 
 		the_content();
 

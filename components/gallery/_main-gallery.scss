@@ -1,0 +1,49 @@
+.gallery-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+
+    .gallery-box{
+        position: relative;
+        width: 15vw;
+        height: 15vw;
+
+        .bg-image{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .gallery-inner{
+            display: none;
+            justify-content: center;
+            align-items: center; 
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color:rgba(0, 0, 0, 0.5);
+            
+            .gallery-title{ 
+                z-index: 3;
+                color: white;
+            }
+        }
+
+
+        &:hover{
+            background-color:rgba(0, 0, 0, 0.5);
+    
+            .gallery-inner{
+                display: flex;
+            }
+        }
+    }
+}
+
