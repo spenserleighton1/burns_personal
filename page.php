@@ -13,6 +13,7 @@ get_header();
 		 * @var StdClass
 		 */
 		
+		//  HERO SECTION
 		$hero = new StdClass;
 		$hero->hero_image  = get_field('hero_image');
 		$hero->hero_text  = get_field('hero_text');
@@ -21,11 +22,13 @@ get_header();
 
 		Components\View::render('hero', 'main-hero', $hero);
 
+		// ABOUT SECTION
 		$about = new StdClass;
 		$about->text = get_field('about');
 
 		Components\View::render('about', 'about', $about);		
 
+		// GALLERY PHOTOS
 		if (have_rows('gallery_content')) :
 			$gallery = new StdClass;
 			$gallery->images = array();
