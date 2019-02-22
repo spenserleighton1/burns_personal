@@ -86,6 +86,7 @@
  */
 // Component styles are injected through gulp
 /* inject:scss */
+@import '../../components/about/about';
 @import '../../components/event/event';
 @import '../../components/footer/footer';
 @import '../../components/gallery/main-gallery';

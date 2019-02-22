@@ -21,6 +21,11 @@ get_header();
 
 		Components\View::render('hero', 'main-hero', $hero);
 
+		$about = new StdClass;
+		$about->text = get_field('about');
+
+		Components\View::render('about', 'about', $about);		
+
 		if (have_rows('gallery_content')) :
 			$gallery = new StdClass;
 			$gallery->images = array();
