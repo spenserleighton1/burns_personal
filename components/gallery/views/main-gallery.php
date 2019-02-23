@@ -5,8 +5,15 @@ if($DATA){ ?>
     <div class="container">
         <div class="row gallery-container">
             <?php foreach($DATA->images as $image){ ?>
+
                 <div class="gallery-box">
-                    <img style="display: none" src="<?php echo $image->url; ?>" alt="for modal purposes">
+                    <img 
+                    style="display: none" 
+                    src="<?php echo $image->url; ?>" 
+                    title="<?php echo $image->title; ?>" 
+                    description="<?php echo $image->description; ?>"
+                    year="<?php echo $image->year; ?>"
+                    >
                     <div class="bg-image" style="background-image: url('<?php echo $image->url; ?>')"></div>
                     <div class="gallery-inner">
                         <h2 class="gallery-title">
@@ -15,17 +22,14 @@ if($DATA){ ?>
                     </div>
                 </div>
 
-                <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">              
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <img src="" class="imagepreview" style="width: 100%;" >
-                    </div>
-                    </div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" src="" id="img01">
+                    <div id="title"></div>
+                    <div id="description"></div>
+                    <div id="year"></div>
                 </div>
-                </div>
-
 
             <?php } ?>
         </div>
