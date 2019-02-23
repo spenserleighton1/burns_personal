@@ -1,6 +1,6 @@
 
 
-<div class="container about">
+<div id="about" class="container about" onscroll="scollPos();">
     <div class="row">
         <p>
             <?php 
