@@ -37,7 +37,7 @@ get_header();
 			  $image->title = get_sub_field('title');
 			  $image->url = get_sub_field('image');
 			  $image->year = get_sub_field('year');
-			  $image->description = wp_trim_words(get_sub_field('description'), 20);
+			  $image->description = wp_trim_words(get_sub_field('description'), 50);
 			  array_push($gallery->images, $image);
 			endwhile;
 

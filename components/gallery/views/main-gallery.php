@@ -26,9 +26,13 @@ if($DATA){ ?>
                 <div id="myModal" class="modal">
                     <span class="close">&times;</span>
                     <img class="modal-content" src="" id="img01">
-                    <div id="title"></div>
-                    <div id="description"></div>
-                    <div id="year"></div>
+                    <div class="gallery-details">
+                        <h2>
+                            <span id="title"></span>
+                            <span id="year"></span>
+                        </h2>
+                        <p id="description"></p>
+                    </div>
                 </div>
 
             <?php } ?>

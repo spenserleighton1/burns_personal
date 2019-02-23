@@ -2,10 +2,12 @@
 
     $('.gallery-box').on('click', function() {
         $('.modal-content').attr('src', $(this).find('img').attr('src'));
-        $('#myModal').css('display', 'block');   
+        $('#myModal').css('display', 'flex');   
         $('#title').text($(this).find('img').attr('title'));   
         $('#description').text($(this).find('img').attr('description'));   
         $('#year').text($(this).find('img').attr('year'));   
+
+        $('gallery-details').attr('height', $('.modal-content').height());
     });		
 
    
