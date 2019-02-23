@@ -3,7 +3,6 @@
  * Standard Page Template
  */
 
-get_header();
 
 	while ( have_posts() ) : the_post(); ?>
 		<?php
@@ -21,6 +20,8 @@ get_header();
 		$hero->hero_test  = 'testingitout';
 
 		Components\View::render('hero', 'main-hero', $hero);
+
+get_header();
 
 		// ABOUT SECTION
 		$about = new StdClass;
@@ -51,4 +52,5 @@ get_header();
 
 	<?php endwhile;
 
-get_footer(); ?>
+get_footer();
+ ?>

@@ -4,12 +4,14 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height: 28vw;
+	background-attachment: fixed;
+	height: calc(100vh - 86.75px);
+	// height: 80vh;
 	opacity: .75;
 }
 
 #hero {
-	max-height:500px;
+
 	overflow:hidden;
 	background: #000;
 	position: relative;

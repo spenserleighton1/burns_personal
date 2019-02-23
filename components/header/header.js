@@ -1,4 +1,34 @@
-;(function ($) {
+;(function($) {
+
+    $('.map').mouseover(()=> {
+        $('.map-hover').fadeIn(1)
+    })
+    $('.map').mouseleave(()=> {
+        $('.map-hover').fadeOut(1)
+    })
+
+    $('.paint').mouseover(()=> {
+        $('.paint-hover').fadeIn(1)
+    })
+    $('.paint').mouseleave(()=> {
+        $('.paint-hover').fadeOut(1)
+    })
+
+    $('.insta').mouseover(()=> {
+        $('.insta-hover').fadeIn(1)
+    })
+    $('.insta').mouseleave(()=> {
+        $('.insta-hover').fadeOut(1)
+    })
+
+    $('.contact').mouseover(()=> {
+        $('.contact-hover').fadeIn(1)
+    })
+    $('.contact').mouseleave(()=> {
+        $('.contact-hover').fadeOut(1)
+    })
+
+
 
   $(document).ready(function(){
 

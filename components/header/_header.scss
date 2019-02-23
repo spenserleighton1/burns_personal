@@ -37,6 +37,12 @@ header{
 	// top: 0;
 }
 
+.sticky-nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+
 .branding{
 	display: flex;
 	flex-wrap: wrap;
@@ -50,6 +56,21 @@ header{
 		}
 	}
 
+
+	.selected-menu-item{
+		margin-right: 20px;
+
+		h1{
+			color: silver;
+		}
+
+		.map-hover,
+		.paint-hover,
+		.insta-hover,
+		.contact-hover{
+			display: none;
+		}
+	}
 	.social-icons{
 		float: right;
 		display: flex;
