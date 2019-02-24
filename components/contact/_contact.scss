@@ -1,3 +1,68 @@
 .the-contact{
     display: none;
 }
+
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alt-contact{
+    width: 25vw;
+}
+
+.alt-contact-hover{
+    h3{
+        color: #13ddbb;
+
+        span{
+            color: red;
+        }
+    }
+}
+
+#”contact-form”{
+    
+    input, textarea{
+        border: 2px solid #3D8590;
+        width: 50vw;
+    }
+
+    textarea{
+        width: 30vw;
+    }
+
+    button{
+        background-color:transparent;
+        border: 2px solid #3D8590;
+        color: #3D8590
+    }
+}
+
+#hover-state{
+    label{
+        color: #13ddbb;
+    }
+
+    input, textarea{
+        border: 2px solid #13ddbb;
+        width: 50vw;
+    }
+    textarea{
+        border: 2px solid #13ddbb;
+        width: 30vw;
+    }
+
+    button{
+        background-color:transparent;
+        border: 2px solid #13ddbb;
+        color: #13ddbb
+    }
+}
+
+.wpforms-field-container{
+    width: 50vw;
+}
