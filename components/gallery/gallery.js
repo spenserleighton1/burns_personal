@@ -10,6 +10,8 @@
         $('gallery-details').attr('height', $('.modal-content').height());
     });		
 
+
+
    
 
     // Get the modal

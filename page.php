@@ -43,8 +43,17 @@ get_header();
 			endwhile;
 
 			Components\View::render('gallery', 'main-gallery', $gallery);
-		  endif;
+		endif;
 
+		// $map_args = array(
+		// 	'p'         => 49, // ID of a page, post, or custom type
+		// 	'post_type' => 'any'
+		//   );
+		//   $map = new WP_Query($map_args);
+
+		Components\View::render('map', 'map');
+		Components\View::render('contact', 'contact');
+		Components\View::render('instagram', 'instagram');
 		
 		?>
 

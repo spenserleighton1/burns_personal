@@ -1,31 +1,68 @@
 ;(function($) {
 
     $('.map').mouseover(()=> {
-        $('.map-hover').fadeIn(1)
+        $('.map-hover').fadeIn(0)
     })
     $('.map').mouseleave(()=> {
-        $('.map-hover').fadeOut(1)
+        $('.map-hover').fadeOut(0)
     })
 
     $('.paint').mouseover(()=> {
-        $('.paint-hover').fadeIn(1)
+        $('.paint-hover').fadeIn(0)
     })
     $('.paint').mouseleave(()=> {
-        $('.paint-hover').fadeOut(1)
+        $('.paint-hover').fadeOut(0)
     })
 
     $('.insta').mouseover(()=> {
-        $('.insta-hover').fadeIn(1)
+        $('.insta-hover').fadeIn(0)
     })
     $('.insta').mouseleave(()=> {
-        $('.insta-hover').fadeOut(1)
+        $('.insta-hover').fadeOut(0)
     })
 
     $('.contact').mouseover(()=> {
-        $('.contact-hover').fadeIn(1)
+        $('.contact-hover').fadeIn(0)
     })
     $('.contact').mouseleave(()=> {
-        $('.contact-hover').fadeOut(1)
+        $('.contact-hover').fadeOut(0)
+    })
+
+    // Display the sections
+    $('.paint').click(()=> {
+        $('.active').fadeOut(200)
+        $('.active').removeClass('active')
+        setTimeout(()=> { 
+            $('.the-gallery').addClass('active')
+            $('.active').fadeIn(200)
+        }, 200);
+    })
+
+    $('.map').click(()=> {
+        $('.active').fadeOut(200)
+        $('.active').removeClass('active')
+        setTimeout(()=> { 
+            $('.the-map').addClass('active')
+            $('.active').fadeIn(200)
+        }, 200);
+    })
+
+    $('.contact').click(()=> {
+        $('.active').fadeOut(200)
+        $('.active').removeClass('active')
+        setTimeout(()=> { 
+            $('.the-contact').addClass('active')
+            $('.active').fadeIn(200)
+        }, 200);
+    })
+
+    $('.insta').click(()=> {
+        $('.active').fadeOut(200)
+        $('.active').removeClass('active')
+        setTimeout(()=> { 
+            $('.the-instagram').addClass('active')
+            $('.active').fadeIn(200)
+        }, 200);
     })
 
 

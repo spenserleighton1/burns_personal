@@ -2,7 +2,7 @@
     // Main photo gallery
 
 if($DATA){ ?>
-    <div class="container">
+    <div class="container the-gallery">
         <div class="row gallery-container">
             <?php foreach($DATA->images as $image){ ?>
 

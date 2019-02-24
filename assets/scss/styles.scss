@@ -87,12 +87,15 @@
 // Component styles are injected through gulp
 /* inject:scss */
 @import '../../components/about/about';
+@import '../../components/contact/contact';
 @import '../../components/event/event';
 @import '../../components/footer/footer';
 @import '../../components/gallery/main-gallery';
 @import '../../components/header/header';
 @import '../../components/hero/home-page';
 @import '../../components/hero/main-hero';
+@import '../../components/instagram/instagram';
+@import '../../components/map/map';
 @import '../../components/post/post';
 @import '../../components/woocommerce/woocommerce-standard-styles';
 /* endinject */
