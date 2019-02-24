@@ -45,8 +45,8 @@ console.log('loc', locations);
 
 		// Set our map options
 		map_options.scrollwheel = false;
-		map_options.zoom = 4;
-		map_options.center = new google.maps.LatLng(41.4922416,-115.543024);
+		map_options.zoom = 14;
+		map_options.center = new google.maps.LatLng(39.764464,-104.975495);
 		map_options.mapTypeId = google.maps.MapTypeId.ROADMAP;
 		map_options.styles = mapStyles();
 		map_options.mapTypeControl = false;
