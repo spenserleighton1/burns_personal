@@ -45,13 +45,22 @@ get_header();
 			Components\View::render('gallery', 'main-gallery', $gallery);
 		endif;
 
-		// $map_args = array(
-		// 	'p'         => 49, // ID of a page, post, or custom type
-		// 	'post_type' => 'any'
-		//   );
-		//   $map = new WP_Query($map_args);
+		if (have_rows('map_locations')) :
+			$map = new StdClass;
+			$map->locations = array();
+			while (have_rows('map_locations')) : the_row();
+			  $location = new StdClass;
+			  $location->title = get_sub_field('title');
+			  $location->lat = get_sub_field('lat');
+			  $location->long = get_sub_field('long');
+			  $location->image = get_sub_field('image');
+			  $location->description = wp_trim_words(get_sub_field('description'), 50);
+			  array_push($map->locations, $location);
+			endwhile;
+			Components\View::render('map', 'map', $map);
+		endif;
 
-		Components\View::render('map', 'map');
+
 		Components\View::render('contact', 'contact');
 		Components\View::render('instagram', 'instagram');
 		

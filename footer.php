@@ -1,4 +1,4 @@
-		<footer>
+		<footer style="display: none">
 		
 			<?php Components\View::render('footer','nav'); ?>
 			<?php Components\View::render('footer','legal'); ?>
