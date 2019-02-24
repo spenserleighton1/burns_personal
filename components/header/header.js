@@ -28,41 +28,62 @@
         $('.contact-hover').fadeOut(0)
     })
 
+
     // Display the sections
     $('.paint').click(()=> {
-        $('.active').fadeOut(200)
+        $('.active').fadeOut(100)
         $('.active').removeClass('active')
         setTimeout(()=> { 
             $('.the-gallery').addClass('active')
-            $('.active').fadeIn(200)
-        }, 200);
+            $('.active').fadeIn(100)
+            setTimeout(()=> { 
+                $('html,body').animate({
+                    scrollTop: $(".the-gallery").offset().top},
+                    'slow');
+            }, 200);
+        }, 100);
     })
 
     $('.map').click(()=> {
-        $('.active').fadeOut(200)
+        $('.active').fadeOut(100)
         $('.active').removeClass('active')
         setTimeout(()=> { 
             $('.the-map').addClass('active')
-            $('.active').fadeIn(200)
-        }, 200);
+            $('.active').fadeIn(100)
+            setTimeout(()=> { 
+                $('html,body').animate({
+                    scrollTop: $(".the-map").offset().top},
+                    'slow');
+            }, 200);
+        }, 100);
     })
 
     $('.contact').click(()=> {
-        $('.active').fadeOut(200)
+        $('.active').fadeOut(100)
         $('.active').removeClass('active')
         setTimeout(()=> { 
             $('.the-contact').addClass('active')
-            $('.active').fadeIn(200)
-        }, 200);
+            $('.active').fadeIn(100)
+            setTimeout(()=> { 
+                $('html,body').animate({
+                    scrollTop: $(".the-contact").offset().top},
+                    'slow');
+            }, 200);
+        }, 100);
     })
 
     $('.insta').click(()=> {
-        $('.active').fadeOut(200)
+        $('.active').fadeOut(100)
         $('.active').removeClass('active')
         setTimeout(()=> { 
             $('.the-instagram').addClass('active')
-            $('.active').fadeIn(200)
-        }, 200);
+            $('.active').fadeIn(100)
+            setTimeout(()=> { 
+                $('html,body').animate({
+                    scrollTop: $(".the-instagram").offset().top},
+                    'slow');
+            }, 200);
+        }, 100);
     })
 
 
