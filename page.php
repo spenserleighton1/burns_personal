@@ -17,7 +17,6 @@
 		$hero->hero_image  = get_field('hero_image');
 		$hero->hero_text  = get_field('hero_text');
 		$hero->hero_link  = get_field('hero_link');
-		$hero->hero_test  = 'testingitout';
 
 		Components\View::render('hero', 'main-hero', $hero);
 
@@ -45,6 +44,8 @@ get_header();
 			Components\View::render('gallery', 'main-gallery', $gallery);
 		endif;
 
+	
+		// MAP SECTION
 		if (have_rows('map_locations')) :
 			$map = new StdClass;
 			$map->locations = array();
@@ -60,8 +61,10 @@ get_header();
 			Components\View::render('map', 'map', $map);
 		endif;
 
-
+		// CONTACT FORM
 		Components\View::render('contact', 'contact');
+
+		// INSTAGRAM
 		Components\View::render('instagram', 'instagram');
 		
 		?>

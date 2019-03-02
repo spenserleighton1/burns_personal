@@ -50,6 +50,12 @@ header{
 	
 	.logo{
 		flex: 1;
+		position: relative;
+
+		img{
+			// position: absolute;
+			height: 40px;
+		}
 
 		h1{
 			color: #1B8690;
@@ -87,6 +93,11 @@ header{
 				-webkit-transform: rotate(20deg);
 						transform: rotate(20deg);
 			  }
+			
+			&:active{
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
 		}
 	}
 }
@@ -231,4 +242,28 @@ header{
 		display: none;
 	}
 
+}
+
+.top {
+	position: absolute;
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-direction: alternate;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
