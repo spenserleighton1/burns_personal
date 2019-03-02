@@ -53,21 +53,23 @@ header{
 		position: relative;
 
 		img{
-			// position: absolute;
-			height: 40px;
+			display: inline;
+			height: 50px;
 		}
 
 		h1{
 			color: #1B8690;
 		}
+
 	}
 
 
 	.selected-menu-item{
 		margin-right: 20px;
 
-		h1{
+		h2{
 			color: silver;
+			font-size: 2.2rem;
 		}
 
 		.map-hover,
@@ -249,21 +251,20 @@ header{
 	animation-name: fade;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
-	animation-duration: 1s;
+	animation-duration: 3s;
 	animation-direction: alternate;
 }
 
 @keyframes fade {
-	0% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 1;
-	}
-	75% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+	0%   { opacity: 1; }
+	10%  { opacity: 0; }
+	20%  { opacity: 0; }
+	30%  { opacity: 0; }
+	40%  { opacity: 0; }
+	50%  { opacity: 0; }
+	60%  { opacity: 0; }
+	70%  { opacity: 0; }
+	80%  { opacity: 0; }
+	90%  { opacity: 0; }
+	100% { opacity: 0; }
 }

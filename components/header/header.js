@@ -38,7 +38,7 @@
             $('.active').fadeIn(100)
             setTimeout(()=> { 
                 $('html,body').animate({
-                    scrollTop: $(".the-gallery").offset().top},
+                    scrollTop: $(".the-gallery").position().top - 225},
                     'slow');
             }, 200);
         }, 100);
@@ -52,7 +52,7 @@
             $('.active').fadeIn(100)
             setTimeout(()=> { 
                 $('html,body').animate({
-                    scrollTop: $(".the-map").offset().top},
+                    scrollTop: $(".the-map").position().top - 225},
                     'slow');
             }, 200);
         }, 100);
@@ -66,7 +66,7 @@
             $('.active').fadeIn(100)
             setTimeout(()=> { 
                 $('html,body').animate({
-                    scrollTop: $(".the-contact").offset().top},
+                    scrollTop: $(".the-contact").position().top - 225},
                     'slow');
             }, 200);
         }, 100);
@@ -80,7 +80,7 @@
             $('.active').fadeIn(100)
             setTimeout(()=> { 
                 $('html,body').animate({
-                    scrollTop: $(".the-instagram").offset().top},
+                    scrollTop: $(".the-instagram").position().top - 2225},
                     'slow');
             }, 200);
         }, 100);

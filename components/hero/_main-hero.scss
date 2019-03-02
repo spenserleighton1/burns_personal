@@ -11,38 +11,39 @@
 }
 
 #hero {
-
 	overflow:hidden;
 	background: #000;
 	position: relative;
 	text-align: center;
 	
-
 	.hero-content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		position: absolute;
-		top: 50%;
+		bottom: 50%;
 		transform: translateY(-50%);
 		width: 100%;
 		z-index: 2;
 		text-align:center;
-	}
 
-	h1 {
-		color: white;
-		line-height: 1.2;
-    	font-size: 6.5rem;
-    	// font-size: 1.8rem;
-		font-weight: 900;
-		text-transform: uppercase;
-		
-		
-		// @media #{$large-up} {
-		// 	font-size: 4rem;
-		// }
-		
-		// @media #{$xxlarge-up} {
-		// 	font-size: 5.75rem;
-		// }
+		h1 {
+			color: white;
+			// line-height: 1.2;
+			// font-size: 6.5rem;
+			
+			font-size: 7.5vw;
+			font-weight: 900;
+			text-transform: uppercase;
+			
+			
+			// @media #{$large-up} {
+			// 	font-size: 4rem;
+			// }
+			
+			// @media #{$xxlarge-up} {
+			// 	font-size: 5.75rem;
+			// }
+		}
 	}
-	
 }

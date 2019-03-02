@@ -19,14 +19,15 @@
 			<div class="col-12 clearfix">
 				<div class="branding">
 					<div class="logo">
-						<img class="top" style="max-height: 75px" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork-2.png" alt="">
-						<img             style="max-height: 75px" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork-3.png" alt="">
+						<img class="top" style="max-height: 50px" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork-2.png" alt="">
+						<img             style="max-height: 50px" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork-3.png" alt="">
+						<img             style="max-height: 50px; margin-left: 5px" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork.png" alt="">
 					</div>
 					<div class="selected-menu-item">
-						<h1 class="map-hover">map</h1>
-						<h1 class="paint-hover">gallery</h1>
-						<h1 class="contact-hover">contact</h1>
-						<h1 class="insta-hover">instagram</h1>
+						<h2 class="map-hover">map</h2>
+						<h2 class="paint-hover">gallery</h2>
+						<h2 class="contact-hover">contact</h2>
+						<h2 class="insta-hover">instagram</h2>
 					</div>
 					<div class="social-icons">
 						<img class="paint" src="http://localhost:8080/wp-content/uploads/2019/02/palette.png" alt="paintings logo">
