@@ -1,6 +1,8 @@
 ;(function($) {
 
-    console.log('the hero scribs')
+    let ogPosition = $('.hero-content').css('top');
+
+    console.log('ogPosition', ogPosition)
 
     $(function() {
         var eTop = $('.branding').offset().top; //get the offset top of the element
@@ -8,8 +10,8 @@
       
         $(window).scroll(function() { //when window is scrolled
             let a = eTop - $(window).scrollTop()
-          console.log('this other one', a/2);
-          $('.hero-content').css('bottom', a/3)
+        //   console.log('this other one', a/4);
+          $('.hero-content').css('bottom', a/2)
         });
       });
   

@@ -9,8 +9,6 @@
 	var map_options = [];
 	var bounds;
 
-console.log('loc', locations);
-
 
 	$(document).ready(function(){
 
