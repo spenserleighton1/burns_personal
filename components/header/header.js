@@ -80,7 +80,7 @@
             $('.active').fadeIn(100)
             setTimeout(()=> { 
                 $('html,body').animate({
-                    scrollTop: $(".the-instagram").position().top - 2225},
+                    scrollTop: $(".the-instagram").position().top - 225},
                     'slow');
             }, 200);
         }, 100);
