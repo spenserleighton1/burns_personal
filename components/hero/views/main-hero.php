@@ -9,10 +9,10 @@
 
 <section id="hero">
     <div class="hero-main" style="background-image: url('<?php echo get_stylesheet_directory_uri().'/assets/images/burns_wall.gif'; ?>');"></div>
+    <!-- <video class="hero-main" autoplay loop id="video-background" muted plays-inline>
+        <source src="<?php echo get_stylesheet_directory_uri().'/assets/images/burns.mp4'; ?>" type="video/mp4">
+    </video> -->
     <div class="hero-content">
-        <h1><?php echo $DATA->hero_text; ?></h1>
-        <!-- <a href="#" class="button"><?php echo $DATA->hero_test ?></a> -->
+        <h1 class="hero-title" id="hero-title"><?php echo $DATA->hero_text; ?></h1>
     </div>
 </section>
-
-<source src="<?php echo get_stylesheet_directory_uri().'/assets/images/aces.mp4'; ?>" type="video/mp4">

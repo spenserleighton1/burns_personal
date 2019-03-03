@@ -8,6 +8,11 @@
 	height: calc(100vh - 86.75px);
 	// height: 80vh;
 	opacity: .75;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #hero {
@@ -27,11 +32,9 @@
 		z-index: 2;
 		text-align:center;
 
-		h1 {
+		.hero-title {
+			margin-top: 20px;
 			color: white;
-			// line-height: 1.2;
-			// font-size: 6.5rem;
-			
 			font-size: 7.5vw;
 			font-weight: 900;
 			text-transform: uppercase;

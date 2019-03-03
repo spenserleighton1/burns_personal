@@ -41,6 +41,8 @@ header{
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 2;
+	background-color: white;
   }
 
 .branding{
@@ -97,8 +99,8 @@ header{
 			  }
 			
 			&:active{
-				-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
+				-webkit-transform: rotate(90deg);
+				transform: rotate(90deg);
 			}
 		}
 	}
