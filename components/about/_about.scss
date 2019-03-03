@@ -1,7 +1,16 @@
 .about{
     margin-top: 2rem;
-    p{
+    p{  margin: 10px 20px;
         font-size: 1.25rem;
         line-height: 1.5;
     }
 }
+
+@media only screen and (max-width: 490px) {
+	.about{
+        p{
+            margin: 5px 20px;
+            font-size: 1rem;
+        }
+	}
+  }

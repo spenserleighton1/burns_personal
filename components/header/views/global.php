@@ -19,9 +19,9 @@
 			<div class="col-12 clearfix">
 				<div class="branding">
 					<div class="logo">
-						<img class="top" style="max-height: 50px" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork-2.png" alt="">
-						<img             style="max-height: 50px" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork-3.png" alt="">
-						<img             style="max-height: 50px; margin-left: 5px" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork.png" alt="">
+						<img class="top" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork-2.png" alt="">
+						<img src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork-3.png" alt="">
+						<img id="blogo" style="; margin-left: 5px" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork.png" alt="">
 					</div>
 					<div class="selected-menu-item">
 						<h2 class="map-hover">map</h2>

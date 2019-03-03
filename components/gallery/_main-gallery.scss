@@ -3,14 +3,19 @@
 }
 
 .gallery-container{
+    width: auto;
     display: flex;
-    justify-content: space-around;
-    margin: 25px 0;
+    justify-content: flex-start;
+    margin: 20px 0;
 
     .gallery-box{
+        min-width: 125px;
+        min-height: 125px;
         position: relative;
         width: 12vw;
         height: 12vw;
+        float: left;
+        margin: 10px;
 
         .bg-image{
             position: absolute;
