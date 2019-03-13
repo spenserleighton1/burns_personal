@@ -2,7 +2,6 @@
 
     let ogPosition = $('.hero-content').css('top');
 
-    console.log('ogPosition', ogPosition)
 
     // $(function() {
         let navBar = $('.branding').offset().top;
@@ -16,12 +15,9 @@
                 $('#navbar').css('position','fixed')
                 $('#navbar').css('top'     ,'20px')
             }
-            console.log('f',$('.branding').offset().top);
-            
                 let newBottomPos = navBar - $(window).scrollTop();
                 $('.hero-content').css('bottom', newBottomPos/2);
             });
-  
 
             window.onscroll = function() {myFunction()};
 

@@ -19,8 +19,8 @@
 			<div class="col-12 clearfix">
 				<div class="branding">
 					<div class="logo">
-						<img class="top" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork-2.png" alt="">
-						<img src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork-3.png" alt="">
+						<img class="top" src="<?php echo get_stylesheet_directory_uri().'/assets/images/boy-blink.png'; ?>" alt="">
+						<img 			 src="<?php echo get_stylesheet_directory_uri().'/assets/images/boy.png'; ?>" alt="">
 						<img id="blogo" style="; margin-left: 5px" src="http://localhost:8080/wp-content/uploads/2019/02/Untitled_Artwork.png" alt="">
 					</div>
 					<div class="selected-menu-item">
@@ -30,12 +30,22 @@
 						<h2 class="insta-hover">instagram</h2>
 					</div>
 					<div class="social-icons">
-						<img class="paint" src="http://localhost:8080/wp-content/uploads/2019/02/palette.png" alt="paintings logo">
-						<img class="contact" src="http://localhost:8080/wp-content/uploads/2019/02/closed-envelope-circle.png" alt="contact logo">
-						<!-- <a href="https://www.instagram.com/jaysaybay/"> -->
-						<img class="insta" src="http://localhost:8080/wp-content/uploads/2019/02/instagram-logo.png" alt="instagram logo">
-						<!-- </a> -->
-						<img class="map" src="http://localhost:8080/wp-content/uploads/2019/02/map.png" alt="map logo">
+						<div>
+							<img class="paint paint-h" src="<?php echo get_stylesheet_directory_uri().'/assets/images/gal-h.png'; ?>" alt="paintings logo">
+							<img class="paint" src="<?php echo get_stylesheet_directory_uri().'/assets/images/gal.png'; ?>" alt="paintings logo">
+						</div>
+						<div>
+							<img class="contact contact-h" src="<?php echo get_stylesheet_directory_uri().'/assets/images/mail-h.png'; ?>" alt="contact logo">
+							<img class="contact" src="<?php echo get_stylesheet_directory_uri().'/assets/images/mail.png'; ?>" alt="contact logo">
+						</div>
+						<div>
+							<img class="insta insta-h" src="<?php echo get_stylesheet_directory_uri().'/assets/images/ig-h.png'; ?>" alt="instagram logo">
+							<img class="insta" src="<?php echo get_stylesheet_directory_uri().'/assets/images/ig.png'; ?>" alt="instagram logo">
+						</div>
+						<div>
+							<img class="map map-h" src="<?php echo get_stylesheet_directory_uri().'/assets/images/map-h.png'; ?>" alt="map logo">
+							<img class="map" src="<?php echo get_stylesheet_directory_uri().'/assets/images/map.png'; ?>" alt="map logo">
+						</div>
 					</div>
 				</div>
 

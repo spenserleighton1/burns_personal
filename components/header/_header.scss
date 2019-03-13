@@ -92,17 +92,30 @@ header{
 			transition:  transform .2s ease-in-out;
 			height: 50px;
 			margin: 0 7px;
-
-			&:hover {
-				-webkit-transform: rotate(20deg);
-						transform: rotate(20deg);
-			  }
+			z-index: 2;
 			
 			&:active{
 				-webkit-transform: rotate(90deg);
 				transform: rotate(90deg);
 			}
 		}
+		.map-h,
+		.insta-h,
+		.contact-h,
+		.paint-h{
+			display: none;
+			position: absolute;
+			z-index: 3;
+		}
+		// img:last-of-type{
+		// 	-webkit-transition: -webkit-transform .2s ease-in-out;
+		// 	transition:  transform .2s ease-in-out;
+		// 	height: 50px;
+		// 	margin: 0 7px;
+		// 	z-index: 2;
+			
+
+		// }
 	}
 }
 
@@ -253,7 +266,7 @@ header{
 	animation-name: fade;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-direction: alternate;
 }
 
