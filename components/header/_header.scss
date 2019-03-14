@@ -93,11 +93,7 @@ header{
 			height: 50px;
 			margin: 0 7px;
 			z-index: 2;
-			
-			&:active{
-				-webkit-transform: rotate(90deg);
-				transform: rotate(90deg);
-			}
+
 		}
 		.map-h,
 		.insta-h,
@@ -107,15 +103,6 @@ header{
 			position: absolute;
 			z-index: 3;
 		}
-		// img:last-of-type{
-		// 	-webkit-transition: -webkit-transform .2s ease-in-out;
-		// 	transition:  transform .2s ease-in-out;
-		// 	height: 50px;
-		// 	margin: 0 7px;
-		// 	z-index: 2;
-			
-
-		// }
 	}
 }
 
