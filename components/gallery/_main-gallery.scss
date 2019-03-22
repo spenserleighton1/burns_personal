@@ -3,55 +3,20 @@
 }
 
 .gallery-container{
-    width: auto;
-    display: flex;
-    justify-content: flex-start;
     margin: 20px 0;
 
-    .gallery-box{
-        min-width: 108px;
-        min-height: 108px;
-        position: relative;
-        width: 10vw;
-        height: 10vw;
-        float: left;
-        margin: 10px;
-
-        .bg-image{
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+    .gallery-image{
+        display: block;
+        margin: 0 auto;
+        img{
+            max-height: 75vh;
+            margin: 10px auto;
+            // margin: 20px 0 10px 0;
         }
-
-        .gallery-inner{
-            display: none;
-            justify-content: center;
-            align-items: center; 
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background-color:rgba(0, 0, 0, 0.5);
-            
-            .gallery-title{ 
-                z-index: 3;
-                color: white;
-            }
-        }
-
-
-        &:hover{
-            background-color:rgba(0, 0, 0, 0.5);
-    
-            .gallery-inner{
-                display: flex;
-            }
+        span{
+            margin-left: 10px;
+            font-size: 12px;
+            color: gray;
         }
     }
 }
