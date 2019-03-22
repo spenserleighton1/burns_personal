@@ -8,7 +8,10 @@
     .gallery-image{
         display: block;
         margin: 0 auto;
-        padding: 10px 100px;
+        padding: 10px 200px;
+        @media only screen and (max-width: 490px) {
+            padding: unset;
+          }
         img{
             max-height: 75vh;
             margin: 10px auto;
