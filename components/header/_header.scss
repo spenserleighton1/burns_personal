@@ -55,8 +55,10 @@ header{
 		position: relative;
 
 		img{
-			display: inline;
-			height: 55px;
+			height: 75px;
+			@media only screen and (max-width: 490px) {
+				height: 69px;
+			}
 		}
 
 		h1{
@@ -71,7 +73,7 @@ header{
 
 		h2{
 			color: silver;
-			font-size: 2.2rem;
+			font-size: 3.2rem;
 		}
 
 		.map-hover,
@@ -90,9 +92,11 @@ header{
 		img{
 			-webkit-transition: -webkit-transform .2s ease-in-out;
 			transition:  transform .2s ease-in-out;
-			height: 50px;
-			margin: 0 7px;
+			height: 75px;
 			z-index: 2;
+			@media only screen and (max-width: 490px) {
+				height: 69px;
+			}
 
 		}
 		.map-h,
