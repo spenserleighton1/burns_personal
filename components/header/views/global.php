@@ -19,9 +19,11 @@
 			<div class="col-12 clearfix">
 				<div class="branding">
 					<div class="logo">
-						<img class="top" src="<?php echo get_stylesheet_directory_uri().'/assets/images/boy-blink.png'; ?>" alt="">
-						<img 			 src="<?php echo get_stylesheet_directory_uri().'/assets/images/boy.png'; ?>" alt="">
-						<img id="blogo" style="; margin-left: 5px" src="<?php echo get_stylesheet_directory_uri().'/assets/images/signature.png'; ?>" alt="">
+						<a href="/">
+							<img class="top" src="<?php echo get_stylesheet_directory_uri().'/assets/images/boy-blink.png'; ?>" alt="">
+							<img 			 src="<?php echo get_stylesheet_directory_uri().'/assets/images/boy.png'; ?>" alt="">
+							<img id="blogo" style="; margin-left: 5px" src="<?php echo get_stylesheet_directory_uri().'/assets/images/signature.png'; ?>" alt="">
+						</a>
 					</div>
 					<div class="selected-menu-item">
 						<h2 class="map-hover">map</h2>

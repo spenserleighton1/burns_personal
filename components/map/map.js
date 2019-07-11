@@ -53,25 +53,39 @@
 		bounds = new google.maps.LatLngBounds();
 
         map = new google.maps.Map(document.getElementById("map"), map_options);
-        TestMarker(locations)
-
+		TestMarker(locations)
     }
         
         // Function for adding a marker to the page.
         function addMarker(location) {
             marker = new google.maps.Marker({
                 position: location,
-                map: map
-            });
+				map: map,
+				icon: 'http://www.christielakekids.com/_images/new/blue_circle.png'
+			});
+			
+			return marker
         }
     
         // Testing the addMarker function
         function TestMarker(locations) {
-            locations = JSON.parse(locations)
+			locations = JSON.parse(locations)
+			
 
             locations.forEach(location => {
+				console.log(location.image.sizes.thumbnail)
                 location.title = new google.maps.LatLng(location.lat, location.long)
-                addMarker(location.title);
+				addMarker(location.title);
+				
+				if (location.image.url) {
+					google.maps.event.addListener(marker, 'mouseover', function (event) {
+						var icon = {url: location.image.sizes.thumbnail};
+						this.setIcon(icon);
+					});
+					google.maps.event.addListener(marker, 'mouseout', function (event) {
+						this.setIcon('http://www.christielakekids.com/_images/new/blue_circle.png');
+					});
+				}
             })
         }
 
